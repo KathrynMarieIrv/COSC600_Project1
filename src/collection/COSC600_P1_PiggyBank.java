@@ -4,15 +4,13 @@
 package collection;
 
 /**
- * PiggyBank Tester
+ * PiggyBank Project Tester
  * 
  * @author KathrynIrving
- * @version 2.1.2023_421
+ * @version 2.2.2023_540
  */
 
 public class COSC600_P1_PiggyBank {
-
-	
 
 	/**
 	 * This static method is for testing the PiggyBank class.
@@ -39,4 +37,3 @@ public class COSC600_P1_PiggyBank {
 	}
 
 }
-
