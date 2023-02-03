@@ -31,7 +31,8 @@ public class PiggyBank {
 	}
 	
 	
-
+    /**Adds the specified amount (numPenniesToAdd) to the PiggyBank's
+     * numPennies **/
 	public void addPennies(int numPenniesToAdd) {
 		if (numPenniesToAdd > 0) {
 			numPennies = numPennies + numPenniesToAdd;
