@@ -12,8 +12,7 @@ package collection;
 public class PiggyBank {
 
 	/**
-	 * Defines private variables which represent the amount of coins in the
-	 * PiggyBank
+	 * private fields which represent the amount of coins in the PiggyBank
 	 */
 	public static void main(String[] args) {
 		COSC600_P1_PiggyBank.test();
@@ -24,7 +23,7 @@ public class PiggyBank {
 	private int numDimes;
 	private int numQuarters;
 
-	/** Sets the variables (amounts of coins) equal to zero */
+	/** Constructor that set the fields (amounts of coins) equal to zero */
 	public PiggyBank()
 
 	{
@@ -35,7 +34,7 @@ public class PiggyBank {
 	}
 
 	/**
-	 * Adds the specified amount (numPenniesToAdd) to the PiggyBank's numPennies
+	 * Method that adds the specified amount (numPenniesToAdd) to the PiggyBank's numPennies
 	 */
 	public void addPennies(int numPenniesToAdd) {
 		if (numPenniesToAdd > 0) {
@@ -44,7 +43,7 @@ public class PiggyBank {
 	}
 
 	/**
-	 * Adds the specified amount (numNickelsToAdd) to the PiggyBank's numNickels
+	 * Method that adds the specified amount (numNickelsToAdd) to the PiggyBank's numNickels
 	 */
 	public void addNickels(int numNickelsToAdd) {
 		if (numNickelsToAdd > 0) {
@@ -53,7 +52,7 @@ public class PiggyBank {
 	}
 
 	/**
-	 * Adds the specified amount (numDimesToAdd) to the PiggyBank's numDimes
+	 * Method that adds the specified amount (numDimesToAdd) to the PiggyBank's numDimes
 	 */
 	public void addDimes(int numDimesToAdd) {
 		if (numDimes > 0) {
@@ -62,7 +61,7 @@ public class PiggyBank {
 	}
 
 	/**
-	 * Adds the specified amount (numQuartersToAdd) to the PiggyBank's numQuarters
+	 * Method that adds the specified amount (numQuartersToAdd) to the PiggyBank's numQuarters
 	 */
 	public void addQuarters(int numQuartersToAdd) {
 		if (numQuarters > 0) {
@@ -70,7 +69,7 @@ public class PiggyBank {
 		}
 	}
 
-	/** returns dollar amount using a float */
+	/** Method that returns dollar amount using a float */
 	public float getContents() {
 		float dollarAmount = (float) 0.00;
 		dollarAmount = dollarAmount + (float) numPennies / (float) 100;
@@ -80,7 +79,7 @@ public class PiggyBank {
 		return dollarAmount;
 	}
 
-	/** returns the amount in the bank and then sets contents to zero */
+	/** Method that returns the amount in the bank and then sets contents to zero */
 	public float breakTheBank() {
 		float dollarAmount = getContents();
 		numPennies = 0;
